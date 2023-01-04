@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.parent-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 0%, 95%);
+    width: 60%;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 60px;
+    font-weight: 400;
+}
+
+.card {
+    padding: 30px 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans button {
+    color: #e38826;
+}
+
+.suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%)
+}
+
+img {
+    padding-bottom: 20px;
+}
+
+button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .parent-container {
+        height: auto;
+        margin: 50px 0px;
+    }
+
+    .sedans {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+
+    .luxury {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+    }
+}
