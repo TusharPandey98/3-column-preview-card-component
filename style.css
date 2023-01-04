@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -24,22 +32,22 @@
 .container {
     display: flex;
     justify-content: center;
-    color: hsl(0, 0%, 95%);
+    color: var(--very-light-gray);
     width: 60%;
 }
 
 .sedans {
-    background-color: hsl(31, 77%, 52%);
+    background-color: var(--bright-orange);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
 .suvs {
-    background-color: hsl(184, 100%, 22%);
+    background-color: var(--dark-cyan);
 }
 
 .luxury {
-    background-color: hsl(179, 100%, 13%);
+    background-color: var(--very-dark-cyan);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -52,7 +60,7 @@ h1 {
 
 p {
     font-family: 'Outfit', sans-serif;
-    color: hsla(0, 0%, 100%, 0.75);
+    color: var(--transparent-white);
     padding-bottom: 60px;
     font-weight: 400;
 }
@@ -61,34 +69,34 @@ p {
     padding: 60px 30px;
 }
 
-button {
+a {
     padding: 10px 20px;
     border-radius: 20px;
-    border: none;
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
     font-weight: 700;
-    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--very-light-gray);
 }
 
-.sedans button {
-    color: #e38826;
+.sedans a {
+    color: var(--bright-orange);
 }
 
-.suvs button {
-    color: hsl(184, 100%, 22%);
+.suvs a {
+    color: var(--dark-cyan);
 }
 
-.luxury button {
-    color: hsl(179, 100%, 13%)
+.luxury a {
+    color: var(--dark-cyan);
 }
 
 img {
     padding-bottom: 20px;
 }
 
-button:hover {
-    color: hsla(0, 0%, 100%, 0.75);
+a:hover {
+    color: var(--transparent-white);
     background-color: transparent;
     cursor: pointer;
 }
